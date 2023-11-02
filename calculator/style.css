@@ -1,0 +1,73 @@
+body {
+  margin: 15%;
+  padding: 0;
+  align-items: center;
+  background-color: rgb(193, 168, 197);
+}
+.container {
+  width: 100%;
+  max-width: 270px;
+  background-color: lightpink;
+  border: 5px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  display:flex; 
+}
+
+.animate-screen {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.input{
+  width: 85%;
+  padding: 10px;
+  background-color: rgb(90, 90, 90);
+  color: aliceblue;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: green;
+  border: 1px solid #000;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+  background-color: rgb(121, 172, 121);
+  transform: scale(0.95);
+  transition: none;
+}
+
+button:active {
+  animation: slideIn 0.1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
